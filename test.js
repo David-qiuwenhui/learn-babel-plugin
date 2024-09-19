@@ -8,7 +8,14 @@ const code = `
       }
 `;
 const babelConfig = {
-  plugins: ["./index.js"],
+  plugins: [
+    [
+      "./index.js",
+      {
+        isProduction: true,
+      },
+    ],
+  ],
 };
 
 const output = transformSync(code, babelConfig);

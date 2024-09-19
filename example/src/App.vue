@@ -10,8 +10,8 @@ export default {
     const handleClick = () => {
       // 1. 在 dev 环境下执行
       // 2. 在 prod 环境下不执行
+      console.log("click");
       if (DEBUG) {
-        console.log("click");
         const a = 10;
         const b = 10;
         console.log(a + b);
